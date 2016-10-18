@@ -1,15 +1,21 @@
 {
   "name": "cookie-proxy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Graceful cookie handler",
   "main": "index.js",
   "scripts": {
-    "package": "node ./node_modules/babel-cli/bin/babel.js ./src/index.js --out-file ./index.js"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dafrok/cookie-proxy.git"
   },
+  "keywords": [
+    "cookie",
+    "proxy",
+    "object",
+    "handler"
+  ],
   "author": "Dafrok <o.o@mug.dog>",
   "license": "MIT",
   "bugs": {
@@ -18,6 +24,8 @@
   "homepage": "https://github.com/Dafrok/cookie-proxy#readme",
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.14.0"
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1"
   }
 }

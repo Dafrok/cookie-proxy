@@ -1,11 +1,11 @@
-'use strict';
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.cookie = factory());
+}(this, (function () { 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = new Proxy({}, {
+var index = new Proxy({}, {
   get: function get(target, name) {
-    var result = '';
     var cookieList = document.cookie.split('; ');
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -39,3 +39,7 @@ exports.default = new Proxy({}, {
     document.cookie = prop + '=' + value;
   }
 });
+
+return index;
+
+})));

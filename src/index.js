@@ -1,6 +1,5 @@
 export default new Proxy({}, {
   get(target, name) {
-    const result = ''
     const cookieList = document.cookie.split('; ')
     for (const item of cookieList) {
       const data = item.split('=')
