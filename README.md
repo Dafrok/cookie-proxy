@@ -1,5 +1,5 @@
 # cookie-proxy
-Graceful cookie API
+Graceful cookie handler
 
 ## Usage
 
